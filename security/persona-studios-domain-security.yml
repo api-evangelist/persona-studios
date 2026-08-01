@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: personastudios.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  5 08:56:09 2026 GMT
+  hsts: null
+domains:
+- domain: personastudios.ai
+  dnssec: false
+  caa:
+  - 0 issue "sectigo.com"
+  - 0 issue "letsencrypt.org"
+  - 0 issue "pki.goog"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
